@@ -216,3 +216,43 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==============================================================================
+# --- Misión InSight y Datos Sísmicos de Marte ---
+# ==============================================================================
+# Bloquea la carpeta completa de los 1,000 modelos estructurales internos
+*LSL_Models/
+*lsl_models/
+*.models
+*.nc
+*.h5
+*.hdf5
+
+# ==============================================================================
+# --- Mars Climate Database (MCD v6.1) y Grillas ---
+# ==============================================================================
+# Bloquea archivos de datos climáticos, tablas de latitudes/longitudes y salidas de texto
+*.mcd
+*.grid
+*.dat
+*.csv
+*.txt
+*.raw
+
+# ==============================================================================
+# --- Extensiones de Gráficos y Mapas Locales ---
+# ==============================================================================
+# Evita subir los mapas generados en alta definición (deben crearse corriendo el código)
+*.png
+*.pdf
+*.svg
+*.jpeg
+*.jpg
+
+# ==============================================================================
+# --- Entornos Virtuales y Caché de Librerías (iapws / astropy) ---
+# ==============================================================================
+.astropy/
+.iapws/
+__pycache__/
+*.pyc
